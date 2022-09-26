@@ -29,5 +29,5 @@ A single product has the below properties:
 - PUT: a PUT requst to this endpoint will update the review matching the passed primary key to match the information in the request body
 - DELETE: a DELETE request to this endpoint will delete the review matching the passed primay key from the database
 
-<b>localhost:8000/api/reviews/product/<int: pk>/</b>
+<b>localhost:8000/api/reviews/product/<int: product_id>/</b>
 - GET: a GET request to the endpoint will return all reviews associated with the passed product primary key

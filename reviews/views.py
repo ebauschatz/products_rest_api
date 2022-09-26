@@ -36,7 +36,7 @@ def review_detail(request, pk):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['GET'])
-def reviews_by_product(request, pk):
-    reviews = Review.objects.filter(product__id = pk)
+def reviews_by_product(request, product_id):
+    reviews = Review.objects.filter(product__id = product_id)
     serializer = ReviewSerializer(reviews, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
