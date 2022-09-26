@@ -19,3 +19,15 @@ A single product has the below properties:
 - GET: a GET request to this endpoint will return the details for the product matching the passed primary key
 - PUT: a PUT requst to this endpoint will update the product matching the passed primary key to match the information in the request body
 - DELETE: a DELETE request to this endpoint will delete the product matching the passed primay key from the database
+
+<b>localhost:8000/api/reviews/</b>
+- GET: a GET request to this endpoint will return a list of all reviews in the database and their details
+- POST: a POST request to this endpoint will create a new review
+
+<b>localhost:8000/api/reviews/<int: pk>/</b>
+- GET: a GET request to this endpoint will return the details for the review matching the passed primary key
+- PUT: a PUT requst to this endpoint will update the review matching the passed primary key to match the information in the request body
+- DELETE: a DELETE request to this endpoint will delete the review matching the passed primay key from the database
+
+<b>localhost:8000/api/reviews/product/<int: pk>/</b>
+- GET: a GET request to the endpoint will return all reviews associated with the passed product primary key
